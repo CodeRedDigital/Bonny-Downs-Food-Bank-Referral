@@ -1,0 +1,36 @@
+<fieldset>
+  <legend>Referrer's Details</legend>
+  <label for="referrer-name">Referring Organisation/Name of Referrer</label>
+  [text* referrer-name id:referrer-name placeholder "Your organisation/name"]
+  <label for="referrer-email">Referrer's email</label>
+  [email* referrer-email id:referrer-email placeholder "name@organisation.com"]
+  <label for="referrer-telephone">Referrer's telephone</label>
+  [tel* referrer-telephone id:referrer-telephone placeholder "07777123456"]
+</fieldset>
+<fieldset>
+  <legend>Details of person being Referred</legend>
+  <label for="referree-name">Name of person being Referred (First name Last name)</label>
+  [text* referree-name id:referree-name placeholder "John Smith"]
+  <label for="referree-address">Address of person being Referred including the E6 postcode</label>
+  [textarea* referree-address id:referree-address placeholder "John Bloggs"]
+  <label for="referree-dob">Referree's Date of Birth</label>
+  [text* referree-dob id:referree-dob placeholder "DD/MM/YYYY"]
+  <label for="referree-telephone">Referree's telephone</label>
+  [tel* referree-telephone id:referree-telephone placeholder "07777987654"]
+</fieldset>
+<fieldset>
+  <legend>Number of people requiring food</legend>
+  <label for="referral-adults">Adults</label>
+  [select referral-adults id:referral-adults "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10"]
+  <label for="referral-children">Children</label>
+  [select referral-children id:referral-children "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10"]
+  <label for="referral-child-ages">Ages of children</label>
+  [text* referral-child-ages id:referral-child-ages placeholder "5, 6, 7, …"]
+</fieldset>
+<fieldset>
+  <legend>Main Reason for Requiring Support</legend>
+  <label for="referral-support">Reason</label>
+  [select referral-support id:referral-support include_blank "Benefit change" "Benefit delay/ awaiting first payment" "Debt" "Homelessness" "Low income"]
+</fieldset>
+
+[submit "Submit"]
